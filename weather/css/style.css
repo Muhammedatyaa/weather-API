@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color : #1e202b;
+    --secondary: #bfc1c8
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+    color: var(--secondary);
+}
+
+/* Start Header  */
+.header {
+    padding: 50px;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+}
+
+.header .logo {
+    display: flex;
+    text-decoration: none;
+}
+
+.header .logo img {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header .logo .descripition h1 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.header .logo .descripition p {
+    font-size: 10px;
+    color: var(--secondary);
+}
+
+.navbar-nav {
+    margin-left: 35% !important;
+}
+
+.navbar-nav li {
+    margin-left: 30px;
+}
+
+.navbar-nav li a {
+    font-size: 14px;
+    color: #fff;
+    padding: 2px 25px !important;
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    font-weight: 500;
+}
+
+.navbar-nav li a.active,
+.navbar-nav li a:hover{
+    border-color: #009ad8;
+    color: #009ad8 !important;
+}
+
+/* End Header  */
+/* Start hero section  */
+.hero-section {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    margin-bottom: 200px;
+    padding: 50px 0 ;
+}
+
+.hero-section .container {
+    position: relative;
+}
+
+.hero-section input {
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: black !important;
+    border: 0px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.hero-section input::placeholder {
+    color: rgb(104, 101, 101);
+    font-weight: 500;
+}
+
+.hero-section button {
+    padding: 10px 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    right: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #009ad8;
+    border: 0;
+}
+
+.row {
+    margin-top: 75px;
+}
+
+.col-md-4 {
+    background-color: #323544;
+    font-size: 14px;
+    padding: 0;
+}
+
+.date {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.first .date {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather-content {
+    padding: 0px 15px;
+}
+
+.location {
+    padding: 15px 0px;
+    font-size: 17px;
+}
+.degree {
+    padding: 20px 0;
+}
+
+.first .degree {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.num {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.first .num {
+    font-size: 60px;
+}
+
+.statue {
+    color: #009ad8;
+}
+
+.info {
+    padding: 20px 0;
+}
+
+.info span {
+    margin-left: 15px;
+}
+
+.seconed {
+    background-color: #262833;
+}
+
+small {
+    font-size: 20px;
+}
+/* End hero section  */
+/* Start footer  */
+.footer {
+    padding: 75px;
+    background-color: #262833;
+}
+
+.left {
+    position: relative;
+}
+
+.left input {
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: var(--secondary) !important;
+    border: 0px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.left button {
+    padding: 10px 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #009ad8;
+    border: 0;
+}
+
+.left input::placeholder {
+    color: rgb(104, 101, 101);
+    font-weight: 500;
+}
+
+.social-links {
+    margin-left: 50px;
+}
+
+.social-links a {
+    font-size: 22px;
+    margin-right: 15px;
+    color: #009ad8;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #323544;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.social-links a:hover {
+    background-color: #009ad8;
+    color: white;
+}
+
+.social-links a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer .col-md-4 {
+    background-color: transparent;
+}
+
+.footer p {
+    margin: 30px;
+}
+/* End footer  */
